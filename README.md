@@ -1,27 +1,63 @@
-# Got a pwd for you!
+# GimmePWD
 
-This application generates a random password, displays it on the screen, and allows the user to copy it to the clipboard. It also includes a CSS animation of moving mouse cursors.
+**Generate, copy, and get on with your life.**
 
-## Features
+A modern, tactile, and cryptographic password generator featuring ultra-fine glassmorphism, responsive particle swarm physics, razor-sharp typography, and satisfying micro-interactions.
 
-### Password Generation
+---
 
-The `generatePassword` function is responsible for creating the password. It defines a set of characters to use in the password, including uppercase and lowercase letters, numbers, and symbols. It then uses a helper function, `getRandomCharacter`, to select a random character from a given character set. The password is initially filled with at least one character from each category. The rest of the password is filled with random characters from any category. The password is then shuffled to ensure randomness.
+## ⚡ Features
 
-### Password Styling
+### 1. Top-Notch Typography & Aesthetics
+- **Display & Identity**: **Space Grotesk** combined with **Geist Mono** for clean, technical headline typography with punchy personality:
+  - Resting inquiry: `Gimme a random PWD...?` *(with the classic `title="fuk uuu!"` easter egg)*
+  - On copy / click: Transitions to `Here ya go!` with glowing emerald accents.
+- **Password Monospace**: **JetBrains Mono** with tabular numerals, balanced kerning, and zero ligatures for absolute glyph distinction.
+- **Ultra-Fine Glassmorphism**: A completely transparent frosted glass card (18px blur, 200% saturation) allows background particle colors to heavily bleed through as ambient glowing lights.
+- **Syntax Category Color System**:
+  - 🟢 **Uppercase**: Electric Mint (`#00F5A0`)
+  - 🔵 **Lowercase**: Soft Ice Cyan (`#38BDF8`)
+  - 🟡 **Numbers**: Cyber Amber (`#FBBF24`)
+  - 🟣 **Symbols**: Neon Orchid / Magenta (`#E879F9`)
+- **Staggered Cipher Decrypt Roll**: Every generated password cascades through rapid glyph decryption waves before snapping into place.
 
-The `updatePasswordStyle` function styles the password based on the types of characters it contains. It uses regular expressions to identify the types of characters in the password and wraps each character in a span element with a class corresponding to its type. It also counts the number of each type of character and displays this count.
+---
 
-### Copy to Clipboard
+### 2. Multi-Layered Physics Engine
+- **Fluid Simplex Noise Swarm**: ~280 floating characters dynamically sampled from the current password drifting in 3D simplex noise space.
+- **Cursor Repulsion & Wake**: Particles fluidly swerve away from your mouse like water; rapid mouse flicks generate kinetic directional wakes.
+- **Refresh Singularity (Vortex)**: Clicking `Re-roll` (or pressing `Space`) pulls all floating characters into a high-speed gravitational vortex toward the button, followed by an explosive radial shockwave.
+- **Copy Blast Shockwave**: Clicking the password sends a luminescent circular shockwave ring expanding outward across the canvas, accelerating particles with elastic damping and bounce-back.
+- **True 3D Space & Parallax**: Central glass card tilts smoothly in 3D perspective following your cursor, with its inner elements floating in Z-space above the glass. Features a dynamic specular border highlight and a luminous rotating conic beam.
 
-The `copyToClipboard` function copies the generated password to the clipboard when the user clicks on it. It uses the `document.execCommand("copy")` method to copy the text. It also displays a message to the user indicating that the password has been copied, and this message is cleared after one second.
+---
 
-### CSS Animation
+### 3. Tactical Controls
+- **Interactive Length Slider**: Adjust password length between 8 and 40 characters (default 21) with real-time entropy calculation (*e.g., `135-bit • Quantum Resistant`*).
+- **Interactive Breakdown Sync**: Hovering over any character category pill (`UPPERCASE`, `LOWERCASE`, `NUMBER`, `SYMBOL`) spotlights those exact characters in the password, with inherited accent coloring and scaled fonts.
+- **Web Audio Micro-SFX**: Satisfying, calm mechanical latch clicks on both re-roll and copy operations (toggleable via the top-right sound icon, saved in `localStorage`).
+- **Signature Personality**: Effortless and visible by default—the header dialogue smoothly flips from `Gimme a random PWD...?` *(with the classic `fuk uuu!` easter egg)* to `Here ya go!`.
+- **Keyboard Shortcuts**:
+  - <kbd>Space</kbd> &rarr; Generate / Re-roll
+  - <kbd>Enter</kbd> &rarr; Copy to clipboard
+  - *(<kbd>R</kbd> and <kbd>C</kbd> supported as single-key alternatives)*
 
-The `Mouse` class and the `preload`, `setup`, and `draw` functions are part of a p5.js sketch that creates an animation of moving mouse cursors. The `Mouse` class defines the properties and behaviors of each mouse cursor in the animation. The `preload` function loads an image of a mouse cursor, the `setup` function creates the canvas and initializes the mouse cursors, and the `draw` function updates and draws each mouse cursor on each frame.
+---
 
-The `windowResized` function is an event handler that resizes the canvas whenever the window is resized, ensuring that the animation always fills the entire window.
+## 🚀 Running Locally
 
-## License
+Open `index.html` directly in any modern browser, or run a local static server:
+
+```bash
+# Python
+python -m http.server 5500
+
+# Node.js
+npx serve .
+```
+
+---
+
+## 📜 License
 
 MIT License
